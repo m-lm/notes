@@ -20,3 +20,12 @@ Red-black trees have 5 important properties:
 5. For each node, all paths from node to leaves contain same number of black nodes (black height).
 
 Property 5 alludes to the concept of a tree's *black height*, which is the number of black nodes from the root of a subtree down to any of its leaves. Note that this includes the black NIL leaf nodes, but excludes the root node itself.
+
+The three main operations that can be performed on red-black trees are:
+1. Search
+2. Insert
+3. Remove
+
+Since *Insert* and *Remove* operations are mutable, they require *rotations* to respond to any violations of the 5 aforementioned red-black tree conditions.
+
+*Rotations* involve altering the structure of the red-black tree to satisfy the conditions. This is done by rearranging the subtrees to decrease the height of the tree, and should not affect the order of the nodes. There are 2 types of rotations: left rotations, and right rotations.
